@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.2",
+  "description": "this is resume website",
+  "main": "index.html",
+  "author": "Saif Ullah",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass --include-path scss sass/style.scss assets/css/style.css --output-style compressed",
+    "watch": "nodemon -e scss -x 'yarn build'"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
